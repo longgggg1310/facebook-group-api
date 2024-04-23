@@ -9,32 +9,22 @@ Buzzhome-API is a Node.js API server for managing real estate data. It provides 
    yarn
    # or
    npm install
+3. Migrate Database: Migrate the database schema using Sequelize CLI:
+   ```
+    npx sequelize-cli db:migrate
+4. Add Seeding: Seed the database with initial data using Sequelize CLI:
+   ```bash
+   npx sequelize-cli db:seed:all
+5. Start the Server: Start the API server:
+   ```bash
+   yarn start
+   # or
+   npm run start
 
-   
 
-$ `yarn`
-or $ `npm install`
+6. Create Environment File: Create a file named .env in the root folder and copy the content from example.env. Update the port number to match your environment.
 
-3. migrate db
-
-$ `npx sequelize-cli db:migrate`
-
-4. add seeding
-
-$ `npx sequelize-cli db:seed:all`
-
-5. start
-
-$ `yarn start`
-or $ `npm run start`
-
-6. create file `.env` in the root folder, copy from `example.env`
-   update your port
-
-7. test:
-
-go to [http://localhost:4000/post](http://localhost:4000/post)
-
+7. Testing: Access the API endpoints at [http://localhost:4000/post](http://localhost:4000/post)
 
 # Note
-- Define your route in `src/app.js`
+- Define your custom routes in the `src/app.js` file to extend the functionality of the API
