@@ -1,10 +1,16 @@
 # buzzhome-api
+# Introduction
+Buzzhome-API is a Node.js API server for managing real estate data. It provides endpoints for creating, reading, updating, and deleting real estate listings.
 
 # Set up
-1. create file `database/config/config.js`, copy from `database/config/example.js`
-   update database config in `development` mode
+1. Create Config File: Create a file named config.js in the database/config directory and copy the content from example.js. Update the database configuration for the development mode.
+2. Install package: Run the following command to install the required packages:
+   ```bash
+   yarn
+   # or
+   npm install
 
-2. install package
+   
 
 $ `yarn`
 or $ `npm install`
